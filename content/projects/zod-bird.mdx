@@ -4,7 +4,6 @@ description: Zodbird is an e2e typed tinybird.co client library for typescript, 
 repository: chronark/zod-bird
 date: "2023-05-21"
 published: true
-  
 ---
 
 - typesafe
@@ -15,26 +14,7 @@ published: true
 
 
 ```ts
-import { Tinybird } from "@chronark/zod-bird";
-import { z } from "zod";
 
-const tb = new Tinybird({ token: "token" });
-
-export const getEvents = tb.buildPipe({
-  pipe: "get_events__v1",
-  parameters: z.object({
-    tenantId: z.string(),
-  }),
-  data: z.object({
-    event: z.string(),
-    time: z.number().transform((t) => new Date(t)),
-  }),
-});
-
-
-const res = await getEvents({ tenantId: "chronark" })
-
-// res.data = {event: string, time: Date}[]
 ```
 
 ## Install
