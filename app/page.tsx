@@ -29,9 +29,9 @@ export default function Home() {
       <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
 
       {/* Main Content Container */}
-      <div className="flex flex-col items-center justify-center text-center space-y-8 z-10 max-w-4xl mx-auto px-4">
+      <div className="flex flex-col items-center justify-center text-center space-y-8 z-10 max-w-2xl mx-auto px-3">
         {/* Main Title */}
-        <h1 className="text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-8xl lg:text-9xl whitespace-nowrap bg-clip-text bg-gradient-to-r from-zinc-100 via-white to-zinc-100">
+        <h1 className="text-3xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-5xl md:text-7xl lg:text-8xl whitespace-nowrap bg-clip-text bg-gradient-to-r from-zinc-100 via-white to-zinc-100">
           {"Shaylin's Project Portfolio"}
         </h1>
 
